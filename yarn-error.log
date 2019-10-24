@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add Pretty
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js add ghp-pages
 
 PATH: 
   /Users/luvi/.cargo/bin:/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/Pretty: Not found
+  Error: https://registry.yarnpkg.com/ghp-pages: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:66058:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:129541:22)
       at Request.emit (events.js:210:5)
@@ -34,12 +34,15 @@ npm manifest:
     "dependencies": {
       "@material-ui/core": "^4.5.1",
       "axios": "^0.19.0",
+      "lodash.template": "^4.5.0",
+      "mixin-deep": "^1.3.2",
       "react": "^16.11.0",
       "react-dom": "^16.10.2",
       "react-dropdown": "^1.6.4",
       "react-router-dom": "^5.1.2",
       "react-scripts": "3.2.0",
-      "react-select": "^3.0.8"
+      "react-select": "^3.0.8",
+      "set-value": "^2.0.1"
     },
     "scripts": {
       "start": "react-scripts start",
@@ -6645,7 +6648,7 @@ Lockfile:
       p-locate "^3.0.0"
       path-exists "^3.0.0"
   
-  lodash._reinterpolate@~3.0.0:
+  lodash._reinterpolate@^3.0.0, lodash._reinterpolate@~3.0.0:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
     integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
@@ -6666,6 +6669,14 @@ Lockfile:
     integrity sha1-5zoDhcg1VZF0bgILmWecaQ5o+6A=
     dependencies:
       lodash._reinterpolate "~3.0.0"
+      lodash.templatesettings "^4.0.0"
+  
+  lodash.template@^4.5.0:
+    version "4.5.0"
+    resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+    integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
+    dependencies:
+      lodash._reinterpolate "^3.0.0"
       lodash.templatesettings "^4.0.0"
   
   lodash.templatesettings@^4.0.0:
@@ -6995,6 +7006,14 @@ Lockfile:
     version "1.3.1"
     resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
     integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
+    dependencies:
+      for-in "^1.0.2"
+      is-extendable "^1.0.1"
+  
+  mixin-deep@^1.3.2:
+    version "1.3.2"
+    resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
+    integrity sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==
     dependencies:
       for-in "^1.0.2"
       is-extendable "^1.0.1"
@@ -9554,6 +9573,16 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/set-value/-/set-value-2.0.0.tgz#71ae4a88f0feefbbf52d1ea604f3fb315ebb6274"
     integrity sha512-hw0yxk9GT/Hr5yJEYnHNKYXkIA8mVJgd9ditYZCe16ZczcaELYYcfvaXesNACk2O8O0nTiPQcQhGUQj8JLzeeg==
+    dependencies:
+      extend-shallow "^2.0.1"
+      is-extendable "^0.1.1"
+      is-plain-object "^2.0.3"
+      split-string "^3.0.1"
+  
+  set-value@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/set-value/-/set-value-2.0.1.tgz#a18d40530e6f07de4228c7defe4227af8cad005b"
+    integrity sha512-JxHc1weCN68wRY0fhCoXpyK55m/XPHafOmK4UWD7m2CI14GMcFypt4w/0+NV5f/ZMby2F6S2wwA7fgynh9gWSw==
     dependencies:
       extend-shallow "^2.0.1"
       is-extendable "^0.1.1"

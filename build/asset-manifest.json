@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/inlaw_1/static/css/main.34de6062.chunk.css",
+    "main.js": "/inlaw_1/static/js/main.4f7b2c4e.chunk.js",
+    "main.js.map": "/inlaw_1/static/js/main.4f7b2c4e.chunk.js.map",
+    "runtime-main.js": "/inlaw_1/static/js/runtime-main.e768796c.js",
+    "runtime-main.js.map": "/inlaw_1/static/js/runtime-main.e768796c.js.map",
+    "static/js/2.e8fd9e66.chunk.js": "/inlaw_1/static/js/2.e8fd9e66.chunk.js",
+    "static/js/2.e8fd9e66.chunk.js.map": "/inlaw_1/static/js/2.e8fd9e66.chunk.js.map",
+    "index.html": "/inlaw_1/index.html",
+    "precache-manifest.4b35ca3a04ebc95e0fb18ffbad73f869.js": "/inlaw_1/precache-manifest.4b35ca3a04ebc95e0fb18ffbad73f869.js",
+    "service-worker.js": "/inlaw_1/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/inlaw_1/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e768796c.js",
+    "static/js/2.e8fd9e66.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.4f7b2c4e.chunk.js"
+  ]
+}
